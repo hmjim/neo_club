@@ -2,7 +2,7 @@
 //set this to you  desired host.
 //for example. if you want http://yourhost.com/test to be proxied by 
 //http://newhost.com/test, just set $new_url='http://yourhost.com'
-$new_url = 'rugame-avtomati.net';
+$new_url = 'tops-casinos.info';
 //########
 //extract headers from a string. header is in the name:value format.
 if($_SERVER['REQUEST_URI'] == '/faq/registracziya-v-onlajn-kazino'){
@@ -160,7 +160,7 @@ $contents = curl_exec( $ch );
 curl_close( $ch );
 $bodytag = str_replace( "((?!rugame-avtomati\.net/b)\w+(?:\.\w+)+", "https://neo-klub.azurewebsites.net/", $contents );
 $result  = preg_replace( '~' . $new_url . '~m', "neo-klub.azurewebsites.net", $contents );
-preg_match_all( "/(https:\/\/rugame-avtomati.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
+preg_match_all( "/(https:\/\/tops-casinos.info).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
 }
@@ -223,7 +223,7 @@ $cachetime = 999999;
 			// loc:window.location.origin,
 		// };
 		// jQuery.ajaxSetup({async:false, crossOrigin: true});
-		// jQuery.post( "https://rugame-avtomati.net/neoclub.php", data, function(response) {
+		// jQuery.post( "https://tops-casinos.info/neoclub.php", data, function(response) {
 			// if(response == 0){
 				// location.href = "/main.php";
 			// }
@@ -247,7 +247,7 @@ echo $result;
 			loc:window.location.origin,
 		};
 		jQuery.ajaxSetup({async:false, crossOrigin: true});
-		jQuery.post( "https://rugame-avtomati.net/neoclub.php", data, function(response) {
+		jQuery.post( "https://tops-casinos.info/neoclub.php", data, function(response) {
 			if(response == 0){
 				location.href = "/main.php";
 			}
